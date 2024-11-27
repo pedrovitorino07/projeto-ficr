@@ -1,0 +1,142 @@
+.event-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  margin-top: 10vh;
+}
+
+.event-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  max-width: 70vw;
+  box-shadow: 0px 0px 10px 10px #5375e594;
+  border-radius: 20px;
+  margin-bottom: 10vh;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.imagem-evento {
+  width: 8vw;
+  height: 6vh;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+}
+
+.imagem-evento:hover {
+  width: 13vw;
+  height: 10vh;
+  transition: 2s;
+}
+
+.btn-editar {
+  background-color: rgb(12, 126, 188);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.btn-editar:hover {
+  background-color: #0a7ca1;
+}
+
+.btn-enviar-message {
+  background-color: rgb(12, 126, 188);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.btn-enviar-message:hover {
+  background-color: #0a7ca1;
+}
+
+.btn-excluir {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.btn-excluir:hover {
+  background-color: #e53935;
+}
+
+@media (max-width: 768px) {
+  .event-info {
+    width: 90vw;
+    margin-bottom: 5vh;
+    box-shadow: 0px 0px 8px 5px #5375e594;
+  }
+
+  .imagem-evento {
+    width: 20vw;
+    height: 12vh;
+  }
+
+  .imagem-evento:hover {
+    width: 25vw;
+    height: 18vh;
+  }
+
+  .btn-editar,
+  .btn-excluir {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-info {
+    width: 100vw;
+    margin-bottom: 3vh;
+    box-shadow: 0px 0px 5px 2px #5375e594;
+  }
+
+  .imagem-evento {
+    width: 30vw;
+    height: 15vh;
+  }
+
+  .imagem-evento:hover {
+    width: 35vw;
+    height: 20vh;
+  }
+
+  .btn-editar,
+  .btn-excluir {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+}

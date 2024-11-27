@@ -1,0 +1,76 @@
+.cabecalho {
+  background-color: #5375e5;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between; 
+}
+
+.cabecalho-esquerda { 
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.cabecalho img {
+  width: 73px;
+  height: 73px;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  color: white;
+  margin-top: 15px;
+}
+
+.botao-cabecalho {
+  background-color: #5375e5;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.botao-cabecalho:hover {
+  background-color: #4067e6;
+}
+
+@media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column; 
+    height: auto;
+    padding: 10px 20px;
+    gap: 10px;
+    justify-content: center; 
+  }
+
+  .cabecalho img {
+    width: 60px;
+    height: 60px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .botao-cabecalho {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1em;
+  }
+
+  .botao-cabecalho {
+    padding: 8px 0;
+    font-size: 0.9em;
+  }
+}
